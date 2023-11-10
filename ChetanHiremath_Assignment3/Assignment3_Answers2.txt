@@ -1,0 +1,23 @@
+1. Does the program use k-fold cross-validation?
+The program does not use k-fold cross-validation since it performs the first fold training only and doesn't perform the other folds. 
+
+2. What percentage of the data set was used to train the DBN model?
+The percentage of the data set that is used to train the DBN model is 80%. When you type "print(X_train.shape)" and "print(X.shape)" on the dbn.py, the terminal prints (1437,64) and (1797, 64) respectively when shape is defined as (number of samples, number of features). So, total number of samples of X training set/total number of samples of X set = 1437/1797 = 0.79966611 = 0.80 = 80%.
+
+3. How many samples are in the test set?
+There are 360 samples in the test set. When you type "print(X_test.shape)" on the dbn.py, the terminal prints (360, 64) when shape is defined as (number of samples, number of features).
+
+4. How many samples are in the training set?
+There are 1437 samples in the training set. When you type "print(X_train.shape)" on the dbn.py, the terminal prints (1437, 64) when shape is defined as (number of samples, number of features).
+
+5. How many features are in test set?
+There are 64 features in the test set. When you type "print(X_test.shape)" on the dbn.py, the terminal prints (360, 64) when shape is defined as (number of samples, number of features).
+
+6. How many features are in the training set?
+There are 64 features in the training set. When you type "print(X_train.shape)" on the dbn.py, the terminal prints (1437, 64) when shape is defined as (number of samples, number of features).
+
+7. How many classes are there?
+There are 10 classes in this program.
+
+8. List the classes.
+The classes in this program are 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9. 

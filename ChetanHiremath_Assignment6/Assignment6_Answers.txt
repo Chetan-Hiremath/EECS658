@@ -1,0 +1,8 @@
+1. According to your results (i.e., elbow_k), are there 3 species of iris represented in the iris data set?
+Yes. Because the elbow_k value of the K-Means Clustering is 3. The number of classes is equal to the number of clusters. So, there are 3 Iris Species that are represented in the Iris data-set.
+
+2. According to your AIC results (i.e., aic_elbow_k), are there 3 species of iris represented in the iris data set?
+Yes. Because the aic_elbow_k value of the AIC of Gaussian Mixture Model is 3. The number of classes is equal to the number of clusters. So, there are 3 Iris Species that are represented in the Iris data-set.
+
+3. According to your BIC results (i.e., bic_elbow_k), are there 3 species of iris represented in the iris data set?
+No. Because the bic_elbow_k value of the BIC of Gaussian Mixture Model is 4. The number of classes is not equal to the number of clusters. So, there are no 3 Iris Species that are represented in the Iris data-set.

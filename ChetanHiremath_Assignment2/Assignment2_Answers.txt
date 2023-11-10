@@ -1,0 +1,22 @@
+1. Based on accuracy which model is the best one?
+The best model that is based on the accuracy is the Linear Discriminant Analysis Model because its accuracy value is 0.973 that is considered as the highest accuracy value of the ML Models.
+Manual Calculation of the Accuracy Value of the Linear Regression Model = (sum of diagonal values of the Linear Regression Model)/(total values of the Iris varieties) = (50+48+47)/(50+48+47+0+0+0+2+0+3) = 145/150 = 0.967
+Manual Calculation of the Accuracy Value of the Degree 2 Polynomial Regression Model = (sum of diagonal values of the Degree 2 Polynomial Regression Model)/(total values of the Iris varieties) = (50+49+46)/(50+49+46+0+0+0+1+0+4) = 145/150 = 0.967
+Manual Calculation of the Accuracy Value of the Degree 3 Polynomial Regression Model = (sum of diagonal values of the Degree 3 Polynomial Regression Model)/(total values of the Iris varieties) = (47+47+44)/(47+47+44+3+0+1+2+1+5) = 138/150 = 0.920
+Manual Calculation of the Accuracy Value of the Naive-Bayesian Model = (sum of diagonal values of the Naive-Bayesian Model)/(total values of the Iris varieties) = (50+47+47)/(50+47+47+0+0+0+3+0+3) = 144/150 = 0.960
+Manual Calculation of the Accuracy Value of the K-Nearest Neighbors Model = (sum of diagonal values of the K-Nearest Neighbors Model)/(total values of the Iris varieties) = (50+46+45)/(50+46+45+0+0+0+4+0+5) = 141/150 = 0.940
+Manual Calculation of the Accuracy Value of the Linear Discriminant Analysis Model = (sum of diagonal values of the Linear Discriminant Analysis Model)/(total values of the Iris varieties) = (50+48+48)/(50+48+48+0+0+0+2+0+2) = 146/150 = 0.973
+Manual Calculation of the Accuracy Value of the Quadratic Discriminant Analysis Model = (sum of diagonal values of the Quadratic Discriminant Analysis Model)/(total values of the Iris varieties) = (50+46+48)/(50+48+47+0+0+0+4+0+2) = 144/150 = 0.960
+
+2. For each of the 6 other models, explain why you think it does not perform as well as the best one.
+Linear Regression Model- This model doesn't perform well because it assumes that the features are independent, has linear data mostly, doesn't follow non-linear relationships, and doesn't consider covariances. So, its performance is worse than the LDA's performance.
+
+Degree 2 Polynomial Regression Model- This model doesn't perform well because it assumes that the features are independent and doesn't consider covariances. So, its performance is worse than the LDA's performance.
+
+Degree 3 Polynomial Regression Model- This model doesn't perform well because of its high degree that generates complex values even though the data is linear mostly. It assumes that the feature are independent, not interdependent. So, its performance is worse than the LDA's performance.
+
+Naive-Bayesian Model- This model doesn't perform well because it assumes independent features that are rarely true in the real world and doesn't consider covariances. So, its performance is worse than the LDA's performance.
+
+K-Nearest Neighbors Model- This model doesn't perform well because it performs poorly for high-dimensional data and doesn't consider independent data. So, its performance is worse than the LDA's performance.
+
+Quadratic Discriminant Analysis Model- This model doesn't perform well because it assumes Gaussian data that doesn't exist in the real world even though it considers covariances. So, its performance is worse than the LDA's performance.

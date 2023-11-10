@@ -1,0 +1,28 @@
+1. Based on accuracy which dimensionality reduction method, PCA, simulate annealing, or the genetic algorithm worked the best?
+The best method that is based on the accuracy is the Genetic Algorithm Reduction Method because its accuracy value is 0.960 that is considered as the highest accuracy value of the Dimensionalily Reduction Methods.
+Manual Calculation of the Accuracy Value of the PCA Feature Transformation Reduction Method = (sum of diagonal values of the PCA Feature Transformation Reduction Method)/(total values of the Iris varieties) = (50+44+43)/(50+44+43+0+0+0+6+0+7) = 137/150 = 0.913
+Manual Calculation of the Accuracy Value of the Simulated Annealing Reduction Method = (sum of diagonal values of the Simulated Annealing Reduction Method)/(total values of the Iris varieties) = (50+47+46)/(50+47+46+0+0+0+3+0+4) = 143/150 = 0.953 
+Manual Calculation of the Accuracy Value of the Genetic Algorithm Reduction Method = (sum of diagonal values of the Genetic Algorithm Reduction Method)/(total values of the Iris varieties) = (50+48+46)/(50+48+46+0+0+0+2+0+4) = 144/150 = 0.960
+
+2. For each of the two other methods, explain why you think it did not perform as well as the best one.
+PCA Feature Transformation Reduction Method- This method doesn't perform well because it assumes that the features are linearly correlated and doesn't provide any iterative results since they will improve the algorithm's efficiency. So, its performance is worse than the GA's performance.
+
+Simulated Annealing Reduction Method- This method doesn't perform well because it is not a greddy algorithm that doesn't stop at a first valley and doesn't jump at a far place. So, its performance is worse than the GA's performance.
+
+3. Did the best dimensionality reduction method produce a better accuracy than using none (i.e. the results of Part 1)? Explain possible reasons why it did or did not.
+The best dimensionality reduction method produces an accuracy that is better than the accuracy from Part 1 because the Genetic Algorithm takes the tranformed features and the original features from the PCA Feature Transformation, explores different and various combinations of the features, and finds a sub-optimum solution that is limited by the number of generations.
+
+4. Did Part 2 produce the same set of best features as Part 3? Explain possible reasons why it did or did not.
+The PCA Feature Transformation's performance is poor due to its accuracy value or 0.913, so the Simulated Annealing doesn't produce the same set of best features because it utilizes the random() function.
+PCA Feature Transformation's weakness is already explained in Question 2, so it is the reason that it doesn't produce the same sets.
+Also, the accuracy value of the Simulated Annealing Reduction Method (0.953) > the accuracy value of the PCA Feature Transformation Reduction Method (0.913).
+
+5. Did Part 2 produce the same set of best features as Part 4? Explain possible reasons why it did or did not.
+The PCA Feature Transformation's performance is poor due to its accuracy value or 0.913, so the Genetic Algorithm doesn't produce the same set of best features because it utilizes the random() function.
+The Genetic Algorithm finds the strongest variations of one generation and builds them to find its best solution.
+Also, the accuracy value of the Genetic Algorithm Reduction Method (0.960) > the accuracy value of the PCA Feature Transformation Reduction Method (0.913).
+
+6. Did Part 3 produce the same set of best features as Part 4? Explain possible reasons why it did or did not.
+The Simulated Annealing's performance is poor due to its accuracy value or 0.953, so the Genetic Algorithm doesn't produce the same set of best features because it utilizes the random() function.
+The Simulated Annealing can find the same subset that is produced by the Genetic Algorithm in its random jumps from one subset to another subset and chase another sub-optimum solution.
+Also, the accuracy value of the Genetic Algorithm Reduction Method (0.960) > the accuracy value of the Simulated Annealing Reduction Method (0.953).

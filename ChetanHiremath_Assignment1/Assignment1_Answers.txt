@@ -1,0 +1,21 @@
+1. Using the confusion matrix, manually calculate the Accuracy value. Does it match the value calculated by your program? If not, why? (Manually includes using a spreadsheet).
+The Accuracy value of the 3 iris varieties (Iris-setosa, Iris-versicolor, Iris-virginica) is 0.96, and it matches the accuracy value that is calculated by the program.
+Manual Calculation of the Accuracy Value of the Iris varieties = (sum of diagonal values of the Iris varieties)/(total values of the Iris varieties) = (50+47+47)/(50+47+47+0+0+0+3+0+3) = 144/150 = 0.96
+
+2. Using the confusion matrix, manually calculate the Precision values for each iris variety. Do they match the values calculated by your program? If not, why?
+The Precision values of the 3 iris varieties (Iris-setosa, Iris-versicolor, Iris-virginica) are 1, 0.94, 0.94 respectively. They match their respective precision values that are calculated by the program. 
+Manual Calculation of the Precision Value of Iris-setosa = (correct value of Iris-setosa)/(sum of row values of Iris-setosa) = 50/(50+0+0) = 50/50 = 1
+Manual Calculation of the Precision Value of Iris-versicolor = (correct value of Iris-versicolor)/(sum of row values of Iris-versicolor) = 47/(47+0+3) = 47/50 = 0.94
+Manual Calculation of the Precision Value of Iris-virginica = (correct value of Iris-virginica)/(sum of row values of Iris-virginica) = 47/(47+0+3) = 47/50 = 0.94
+
+3. Using the confusion matrix, manually calculate the Recall values for each iris variety. Do they match the values calculated by your program? If not, why?
+The Recall values of the 3 iris varieties (Iris-setosa, Iris-versicolor, Iris-virginica) are 1, 0.94, 0.94 respectively. They match their respective recall values that are calculated by the program.
+Manual Calculation of the Recall Value of Iris-setosa = (correct value of Iris-setosa)/(sum of column values of Iris-setosa) = 50/(50+0+0) = 50/50 = 1
+Manual Calculation of the Recall Value of Iris-versicolor = (correct value of Iris-versicolor)/(sum of column values of Iris-versicolor) = 47/(47+0+3) = 47/50 = 0.94
+Manual Calculation of the Recall Value of Iris-virginica = (correct value of Iris-virginica)/(sum of column values of Iris-virginica) = 47/(47+0+3) = 47/50 = 0.94
+
+4. Using the confusion matrix, manually calculate the F1 values for each iris variety. Do they match the values calculated by your program? If not, why?
+The F1 values of the 3 iris varieties (Iris-setosa, Iris-versicolor, Iris-virginica) are 1, 0.94, 0.94 respectively. They match their respective F1 values that are calculated by the program.
+Manual Calculation of the F1 Value of Iris-setosa = (2 * Precision Value of Iris-setosa * Recall Value of Iris-setosa)/(Precision Value of Iris-setosa + Recall Value of Iris-setosa) = (2*1*1)/(1+1) = 2/2 = 1
+Manual Calculation of the F1 Value of Iris-versicolor = (2 * Precision Value of Iris-versicolor * Recall Value of Iris-versicolor)/(Precision Value of Iris-versicolor + Recall Value of Iris-versicolor) = (2*0.94*0.94)/(0.94+0.94) = 1.7672/1.88 = 0.94
+Manual Calculation of the F1 Value of Iris-virginica = (2 * Precision Value of Iris-virginica * Recall Value of Iris-virginica)/(Precision Value of Iris-virginica + Recall Value of Iris-virginica) = (2*0.94*0.94)/(0.94+0.94) = 1.7672/1.88 = 0.94
