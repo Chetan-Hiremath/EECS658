@@ -1,8 +1,0 @@
-1. Explain the convergence method and why you picked it. There is no wrong answer. You will get credit for any method you pick as long as it converges and you provide a reasonable explanation of why you picked it.
-I have used a 2D policy array of the updated values after I use the policy array. The policy array is updated after it keeps on calculating new values of the corresponding cells for the Policy Iteration. I have checked to see if the policy array of the current iteration and the policy array of the previous iteration are same for the convergence.
-
-2. Explain the convergence method and why you picked it. There is no wrong answer. You will get credit for any method you pick as long as it converges and you provide a reasonable explanation of why you picked it.
-I have used the similar method of the Policy Iteration for the Value Iteration by checking if the cell values of the policy array of the current iteration and the cell values of the policy array of the previous iteration are same for the convergence.
-
-3. Compare the convergence times between using Policy Iteration and Value Iterantion and give reasons for why you would ever use Policy Iteration.
-The convergence time of the Policy Iteration is slightly slower than the convergence time of the Value Iteration since the Policy Iteration has a large number of possible states and takes several iterations to converge. But you use Policy Iteration because it randomly selects a policy, finds that policy's value function and a new and an improved policy, works in environments with infinite actions, updates the policy directly, and converges on an optimal policy.
