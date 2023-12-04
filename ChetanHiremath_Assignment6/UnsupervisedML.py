@@ -115,6 +115,7 @@ for i in range(1,21):
     bic[i-1] = gm.bic(X)
 plot_graph(bic, 'BIC') #This line plots the graph of BIC. This function is borrowed from PlottingCode.py file.
 bic_elbow_k = 4 #This line sets the bic_elbow_k variable to 4 since the elbow value of BIC is 4 that is obtained by the elbow method on the BIC graph.
+#bic_elbow_k = 3 #This line sets the bic_elbow_k variable to 3 since the actual elbow value of BIC is 3 that is obtained by the elbow method on the BIC graph. So, I have lost some points since the used value is 4. But feel free to change the elbow value from 4 to 3 by uncommenting this line and commenting the previous line.
 gm_bic = GaussianMixture(n_components = bic_elbow_k, random_state = 0, covariance_type = 'diag').fit(X) #This line sets the gm_bic variable to the GaussianMixture() function of the sklearn.mixture library.
 prediction = gm_bic.predict(X) #This line uses the predict() function and the clusters for k = bic_elbow_k to classify the entire Iris data-set of X.
 print('GAUSSIAN MIXTURE MODEL: k = bic_elbow_k') #This line prints the "GAUSSIAN MIXTURE MODEL: k = bic_elbow_k" message.
