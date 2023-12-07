@@ -1,0 +1,35 @@
+1. Explain the convergence method and why you picked it. There is no wrong answer. You will get credit for any method you pick as long as it converges and you provide a reasonable explanation of why you picked it.
+I have used the same method that is used in the Policy Iteration and the Value Iteration by using a 2D policy array of initial values. The policy array is updated after it keeps on calculating new values of the corresponding states for the Monte Carlo First Visit Algorithm. Then, I have checked to see if the values of V(s) of the current iteration and the values of V(s) of the previous iteration are same for the convergence.
+
+2. Did Part 1 and Part 2 converge in the same number of epochs? Why? There is no right or wrong answer as long as you make a reasonable attempt to explain why.
+No. Parts 1 and 2 converge in their respective epochs' counts, which are different and random. Because the Monte Carlo Algorithms use randomness in their respective calculations. Monte Carlo First Visit Algorithm visits states once, but Monte Carlo Every Visit Algorithm visits states for various times. Therefore, the values of the Monte Carlo Algorithms will be completely different. So, it is impossible for these algorithms to converge in the same number of epochs.
+
+3. Draw a Q-Learning State Diagram for the Gridworld Task above.
+The Q-Learning State Diagram is shown on the StateDiagram.pdf, and this diagram has 23 states and 2 termination/terminal states. So, the total number of states of this diagram is 25. Because its grid size is 5. 
+
+4. Explain the convergence method and why you picked it. There is no wrong answer. You will get credit for any method you pick as long as it converges and you provide a reasonable explanation of why you picked it.
+I have used the similar method that is used in the Policy Iteration, the Value Iteration, and the Monte Carlo Algorithms by using a 2D matrix of initial values. The matrix is updated after it keeps on calculating new values of the corresponding states for the Q-Learning Algorithm. Then, I have checked to see if the values of Q-Matrix/Value Matrix of the current iteration and the values of Q-Matrix/Value Matrix of the previous iteration are same for the convergence.
+
+5. Based on your final Value Matrix (Q) what is the optimal path from square 7 to the upper left-hand termination state. If this is not the true optimal path, explain why.
+The optimal path of the final Value Matrix (Q) of the Q-Learning Algorithm from State 7 to the Termination State is 7 -> 2 -> 1 -> 0.
+
+6. Explain the convergence method and why you picked it. There is no wrong answer. You will get credit for any method you pick as long as it converges and you provide a reasonable explanation of why you picked it.
+I have used the same method that is used in the Q-Learning Algorithm by using a 2D matrix of initial values. The matrix is updated after it keeps on calculating new values of the corresponding states for the SARSA Algorithm. Then, I have checked to see if the values of Q-Matrix/Value Matrix of the current iteration and the values of Q-Matrix/Value Matrix of the previous iteration are same for the convergence.
+
+7. Based on your final Value Matrix (Q) what is the optimal path from square 7 to the upper left-hand termination state. If this is not the true optimal path, explain why. (Remember, the SARSA algorithm by its very nature, may not find the optimal path).
+The optimal path of the final Value Matrix (Q) of the SARSA Algorithm from State 7 to the Termination State is 7 -> 2 -> 1 -> 0.
+
+8. Did Part 3 and Part 4 converge in the same number of episodes? Why? There is no right or wrong answer as long as you make a reasonable attempt to explain why.
+No. Parts 3 and 4 converge in their respective epochs' counts, which are different and random. Because Q-Learning and SARSA Algorithms use randomness in their respective calculations and take less time or more time to converge. Q-Learning Algorithm picks actions randomly, but SARSA Algorithm picks actions with the highest values on the Q-Matrix/Value Matrix. Therefore, the values of Q-Learning and SARSA Algorithms will be completely different and allow the respective algorithms to converge in different epochs. So, it is impossible for these algorithms to converge in the same number of epochs.
+
+9. Explain the convergence method and why you picked it. There is no wrong answer. You will get credit for any method you pick as long as it converges and you provide a reasonable explanation of why you picked it.
+I have used the same method that is used in Q-Learning and SARSA Algorithms by using a 2D matrix of initial values. The matrix is updated after it keeps on calculating new values of the corresponding states for the Decaying Epsilon-Greedy Algorithm. Then, I have checked to see if the values of Q-Matrix/Value Matrix of the current iteration and the values of Q-Matrix/Value Matrix of the previous iteration are same for the convergence.
+
+10. Based on your final Value Matrix (Q) what is the optimal path from square 7 to the upper left-hand termination state. If this is not the true optimal path, explain why.
+The optimal path of the final Value Matrix (Q) of the Decaying Epsilon-Greedy Algorithm from State 7 to the Termination State is 7 -> 2 -> 1 -> 0.
+
+11. Did Part 3, Part 4, and Part 5 converge in the same number of episodes? Why? There is no right or wrong answer as long as you make a reasonable attempt to explain why.
+No. Parts 3, 4, and 5 converge in their respective epochs' counts that are completely different and random. Because Q-Learning, SARSA, and Decaying Epsilon-Greedy Algorithms use randomness in their respective calculations and take less time or more time to converge. Q-Learning Algorithm picks actions randomly, and SARSA Algorithm picks actions with the highest values on the Q-Matrix/Value Matrix. The Decaying Epsilon-Greedy Algorithm is different because it is the combination of Q-Learning and SARSA Algorithms and uses a decaying function and an epsilon. If the uniform random number that is between 0 and 1 is less than the epsilon value, then it picks the Q-Learning Algorithm. If not, then it picks the SARSA Algorithm. The values of Q-Learning, SARSA, and Decaying Epsilon-Greedy Algorithm will be completely different and allow the respective algorithms to converge in different epochs. So, it is impossible for these algorithms to converge in the same number of epochs.
+
+12. Explain why the cumulative average reward is different for the 3 parts. There is no wrong answer. You will get credit for your answer as long as you provide a reasonable explanation of why they differed.
+The cumulative average rewards are different for the 3 parts/algorithms because their results depend on randomness. One algorithm will select the optimal policy, but the other 2 algorithms won't match that algorithm's final performance. They converge in different epochs, have different epochs' counts, and calculate their respective values before they find their optimal policies. Therefore, the cumulative average rewards of these 3 parts will be different and random.
