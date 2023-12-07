@@ -196,7 +196,7 @@ for i in range(100):
                 current_set = np.delete(current_set, index)
 
     X_test = np.empty([len(X_all),len(current_set)]) #This line defines the X_test variable that is used as a modified feature set.
-    removed = np.sort(removed)[::-1] #This line sets the removed variable to the np.sort() function that calculated a sorted copy of the array.
+    removed = np.sort(removed)[::-1] #This line sets the removed variable to the np.sort() function that calculates a sorted copy of the array.
     
     #The for-loop with 5 lines sets the X_test[j] variable to the temp that returns a new array without the sub-arrays.
     for j in range(len(X_all)):
